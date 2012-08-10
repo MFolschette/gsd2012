@@ -1,0 +1,72 @@
+% Guide de Survie du Doctorant (à Nantes)
+
+\documentclass[11pt]{report}
+
+%\usepackage{hyperref}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{ifthen}
+
+%\usepackage{amsmath}  % Maths
+%\usepackage{amsfonts} % Maths
+%\usepackage{amssymb}  % Maths
+%\usepackage{stmaryrd} % Maths (crochets doubles)
+
+\usepackage{url}     % Mise en forme + liens pour URLs
+\usepackage{array}   % Tableaux évolués
+\usepackage{eurosym} % Symbole euro €
+
+\usepackage{comment}
+
+\usepackage[hmargin=3cm,vmargin=2.5cm]{geometry}
+
+\begin{comment}
+\usepackage{tikz}
+\newdimen\pgfex
+\newdimen\pgfem
+\usetikzlibrary{arrows,shapes,shadows,scopes}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.pathmorphing}
+\end{comment}
+
+% Commandes À FAIRE
+\usepackage{color} % Couleurs du texte
+\definecolor{darkred}{rgb}{0.5,0,0}
+%\newcommand{\afaire}[1]{\textcolor{red}{[À FAIRE~: #1]}}
+\newcommand{\trad}{\textcolor{blue}{\textbf{[Traduction à faire]}}\par}
+\newcommand{\todo}[1]{\textcolor{red}{\textbf{[#1]}}}
+
+
+% Id est
+\newcommand{\ie}{\textit{i.e.} }
+
+
+
+\title{Guide de Survie du Doctorant}
+
+\author{AED Centrale Nantes}
+
+
+
+\begin{document}
+
+% TODO: Page de titre
+
+\setcounter{page}{0}
+\tableofcontents
+
+\newpage
+\chapter*{Introduction}
+\todo{Le blabla du président ici}
+
+\input{parts/vie-sociale}
+
+\input{parts/nantes}
+
+\input{parts/these}
+
+\end{document}
