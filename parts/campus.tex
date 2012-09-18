@@ -30,13 +30,14 @@ It was originally based in the city center, and was then relocated on its curren
 \subsection{The most important people of the school}
 Here is a non-exhaustive list of important figures that you will probably have to meet during your 3 years of thesis.
 %Voici une petite liste (non exhaustive) de personnalités importantes du campus, que vous serez amenés à croiser durant vos 3 ans de thèse.
-\todo{Compléter les noms et vérifier les nouveaux intitulés des fonctions}
+
+\todo{Revoir la mise en page du tableau (cf. mise en page du trombi)}
 
 \newcommand{\largcol}{0.29\textwidth}
 
 \newcommand{\pers}[4]{%
 \begin{tabular}{m{\largcol}}%
-\ifthenelse{\equal{#1}{}}{\todo{Photo}}{}%
+\ifthenelse{\equal{#1}{}}{\todo{Photo}}{\includegraphics[width=2cm]{images/#1}}%
 %\ifthenelse{\equal{#1}{}}{\todo{Photo}}{\includegraphics[width=2.5cm]{#1}}%
 %\includegraphics{#1}
 \\ \textbf{#2} \\ \textit{(#3)} \\ #4
@@ -44,17 +45,17 @@ Here is a non-exhaustive list of important figures that you will probably have t
 
 \noindent
 \begin{tabular}{*{3}{p{\largcol}}}
-  \pers{}{Arnaud \textsc{Poitou}}{Director}{He's everybody's boss. We all have to swear allegiance to him, even if you not often have to be dealing with him}&%C'est notre chef à tous. On lui doit allégeance, même si en pratique, on a rarement affaire à lui.}&
+  \pers{poitou}{Arnaud \textsc{Poitou}}{Director}{He's everybody's boss. We all have to swear allegiance to him, even if you not often have to be dealing with him}&%C'est notre chef à tous. On lui doit allégeance, même si en pratique, on a rarement affaire à lui.}&
 %  \pers{}{}{Dean of study}{Comme son statut l'indique, il est davantage en lien avec les élèves. Amis moniteurs, si vous avez des problèmes avec vos enseignements, c'est peut-être à sa porte qu'il faut aller frapper.}&
-  \pers{}{Jean-Yves \textsc{Hascoet}}{Research director}{As research people, he's our boss. He manages the research of the school (projets, grants, activities, \dots) and he may have to look after you in case of [very big] issues with your thesis.}&%C'est notre boss à nous. Il gère la politique de recherche de l'école (les projets, l'argent, les diverses activités, \dots) et peut s'occuper de nous en cas de [gros] problèmes avec notre thèse.}\\
+  \pers{hascoet}{Jean-Yves \textsc{Hascoet}}{Research director}{As research people, he's our boss. He manages the research of the school (projets, grants, activities, \dots) and he may have to look after you in case of [very big] issues with your thesis.}&%C'est notre boss à nous. Il gère la politique de recherche de l'école (les projets, l'argent, les diverses activités, \dots) et peut s'occuper de nous en cas de [gros] problèmes avec notre thèse.}\\
   \pers{}{Olivier \textsc{Menard}}{Main secretary}{He deals with all administrative matters that may concern you (all the enrolment red tape, do you remember?). He know all official texts, so he will be able to answer all your administrative concerns.}\\%Il s'occupe des grandes décisions administratives qui nous concernent (oui, la paperasse de l'inscription, c'est en partie pour son service\dots). Véritable encyclopédie des textes officiels, il pourra répondre aux questions auxquelles tout autre secrétaire aura jeté l'éponge.}&
 %  \pers{}{}{Directeur de la communication}{Lui et son équipe gèrent la diffusion des informations et l'événementiel sur le campus. Son travail dépend notamment de votre participation, alors n'hésitez pas à l'informer de tout ce qu'il se passe dans votre labo.}&
 %  \pers{}{}{Directeur adjoint}{C'est l'homme de terrain. Il met à exécution les grandes décisions « concrètes » de l'administration. Vous recevrez notamment pas mal de mails durant l'année sur d'éventuels travaux, changement d'organisation, etc. de sa part.}
-  \pers{}{Édith \textsc{Boutin}}{PhD students secretary}{She deals more specifically with PhD students. You will see her again for re-enrolment each year, and many other enquiries.}&
+  \pers{boutin}{Édith \textsc{Boutin}}{PhD students secretary}{She deals more specifically with PhD students. You will see her again for re-enrolment each year, and many other enquiries.}&
   \pers{}{Your supervisors}{Your supervisors}{They will depend of many things, especially your research subject. They will guide you through your PhD years\dots If they have spare time for you! Indeed, you will be looking for them often, really often.}
 \end{tabular}
 
-\subsection{Students}\trad
+\subsection{Students}
 There are many different kind of students in the school:
 %L'école renferme une population d'étudiants assez hétéroclite. Il y a :
 \paragraph{Engineering students (Ei1, Ei2, Ei3)} They enroll for 3 years after a competitive examination at the end of French \textit{classes préparatoires}, and they make up the biggest part of the Centrale Nantes population. They drive the community life of the school all year long. %Ils sont admis à l'école sur concours après une classe prépa (bac+2) et constituent la majorité des étudiants du campus et sont présents pour 3 ans. Très actifs sur le plan associatif, ils animeront le campus tout au long de l'année. Les premières années vivent dans la résidence près du campus. Depuis peu, certains élèves ingénieurs travaillent en alternance au même titre que les ITII (voir plus bas).
@@ -62,8 +63,8 @@ There are many different kind of students in the school:
 %\paragraph{Les ingénieurs par alternance ITII Pays de la Loire (1ère, 2ème et 3ème année)} Il s'agit d'étudiants en formation par alternance (2 semaines en cours, 2 semaines en entreprise). L'ITII Pays de la Loire est un organisme de formation extérieur à l'École Centrale Nantes, cependant les cours se font sur le campus. Officiellement, ce ne sont pas des étudiants. Dans la pratique, ils sont exactement comme les autres, à la différence qu'ils ne sont présents que 2 semaines sur 4.
 \paragraph{PhD students (D1, D2 \& D3)} That's you!
 
-\subsection{The labs}\trad
-there are 5 laboratories on the campus:
+\subsection{The labs}
+There are 5 laboratories on the campus:
 %Le campus de l'École Centrale comprend 5 labos (voir le plan du campus) :
 \paragraph{The GeM} Its real name is “Institut de Recherche en Génie civil et Mécanique”, and it deals with mechanics and civil engineering, like crash-tests, material studies, mechanics simulation\dots %You can find it on two other places: the science university and in St Nazaire. %On y fait de la simulation mécanique, du génie civil, des études de matériaux, de la dynamique rapide (crash-test)\dots Parmi tous les thèmes de recherche (et il y en a beaucoup), deux ressortent : La méthode X-FEM (méthode des éléments finis enrichis) et la PGD (méthode de décomposition de variables pour résoudre des problèmes beaucoup plus rapidement). D'autre part, un domaine d'application particulièrement en vogue ces temps ci est celui des matériaux composites.
 \paragraph{The LHEEA} The “Laboratoire de recherche en Hydrodynamique, Énergétique et Environnement Atmosphérique” owns several big experimentation pools, which allows to test model boats, and a wind tunnel. %C'est sans doute le laboratoire qui possède le matériel expérimental le plus impressionnant du campus : un bassin de carène (pour tracter des maquettes de bateaux), un bassin de houle (pour faire des vagues), une soufflerie\dots Le LHEEA est morcelé en plusieurs équipes dont les principaux thèmes sont l'hydrodynamique et génie océanique (projet « SEAREV » de récupération d'énergie des vagues), l'énergétique des moteurs à combustion interne, l'étude de la dynamique de l'atmosphère en milieu urbain.
@@ -71,5 +72,5 @@ there are 5 laboratories on the campus:
 \paragraph{The CERMA} Also known as “Centre de Recherche Méthodologique d'Architecture”, it depends of the school of architecture of Nantes. Its main field is architecture physics. %Chapeauté depuis peu par l'École Centrale, le CERMA est avant tout un laboratoire dépendant de l'École Nationale Supérieure d'Architecture de Nantes. On y travaille notamment sur toute la physique liée l'architecture et l'environnement urbain.
 \paragraph{The Jean Leray mathematics laboratory} Only a small part of this laboratory is on the Centrale Nantes campus, while the other part lies in the university of Nantes. It deals with non-linear differential equations, which can have many applications. %On n'en entend pas trop parler, mais il est là, caché dans une partie du bâtiment E ! En fait, c'est parce que l'essentiel se trouve à la fac de sciences et seul un petit bout est à l'École Centrale Nantes. La recherche à Centrale se concentre sur l'étude des équations aux dérivées partielles non-linéaire avec des domaines d'application pouvant aller des problèmes dynamique de populations à l'étude des changement d'état de matériaux supraconducteurs.
 
-%\subsection{Map of the École Centrale Nantes}\trad
+%\subsection{Map of the École Centrale Nantes}
 %\todo{Inclure le plan}
