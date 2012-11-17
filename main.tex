@@ -1,15 +1,16 @@
 % Guide de Survie du Doctorant (à Nantes)
 
-\documentclass[11pt]{report}
+\documentclass[12pt, english, squeezeCommittee, fancyChapter, fancyPart]{these-LUNAM}
 
 %\usepackage{hyperref}
 
-\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{ifthen}
 \usepackage[strings]{underscore}
 \usepackage{graphicx}
+\usepackage[english, french]{babel}
+
 
 %\usepackage{amsmath}  % Maths
 %\usepackage{amsfonts} % Maths
@@ -35,6 +36,8 @@
 \usetikzlibrary{decorations.pathmorphing}
 \end{comment}
 
+\usepackage[french=quotes]{csquotes}
+
 % Commandes À FAIRE
 \usepackage{color} % Couleurs du texte
 \definecolor{darkred}{rgb}{0.5,0,0}
@@ -46,51 +49,91 @@
 % Id est
 \newcommand{\ie}{\textit{i.e.} }
 
+\usepackage{textcomp}
+\geometry{inner=4.5cm, outer=2.5cm, top=2.5cm, bottom=2cm}
+
+\RequirePackage[bookmarks,%
+                colorlinks,%
+                urlcolor=blue,%
+                citecolor=blue,%
+                linkcolor=blue,%
+                hyperfigures,%
+                pagebackref,%
+                pdfcreator=LaTeX,%
+                breaklinks=true,%
+                pdfpagelayout=SinglePage,%
+                bookmarksopen=true,%
+                bookmarksopenlevel=2]{hyperref}
 
 
-\title{Guide de Survie du Doctorant}
+\title{Help for new PhD and Master students}
+\subtitle{arriving on the campus of the \'Ecole Centrale de Nantes}
+\author{AED}{PhD Students Association}{(AED)}
 
-\author{AED Centrale Nantes}
+\discipline{PhD Association}
+
+\specialty{Informative}
+
+\institution{ECN} % - UN, UA, UM, ECN, EMN
+
+\doctoralschool{498 (SPIGA) \& 503 (STIM)}
+\laboratory{GeM, IRCCyN, LHEAA}
+\thesisnumber{NaN}
+\date{2012, December}
+
+\reviewer{M.}{Lucas}{LETOURNEL}{PhD Student}{École Centrale de Nantes}
+\reviewer{M.}{Mathieu}{FOCA}{PhD Student}{École Centrale de Nantes}
+
+\examiner{M.}{Julien}{TANGUY}{PhD Student}{École Centrale de Nantes}
+
+\supervisor{M.}{Maxime}{FOLSCHETTE}{PhD Student}{École Centrale de Nantes}
+
+\cosupervisor{M.}{Raphaël}{POIRÉE}{PhD Student}{Université de Nantes}
 
 
 
 \begin{document}
-    \maketitle
-% TODO: Page de titre
-% Page de thèse centrale nantes ?
-\setcounter{page}{0}
+\maketitle
+
 \tableofcontents
 
-\newpage
+\frontmatter
 \chapter*{Introduction}
 Dear new PhD student,
 
-You are now arrived on the campus of the big and prestigious École Centrale de Nantes as a PhD student (or maybe you are still alone in front of your computer during your internship) !
-If you are reading this, it means that you're already in and you're about to begin.
+You are now arrived on the campus of the big and prestigious École Centrale de Nantes as a PhD student! % (or maybe you are still alone in front of your computer during your internship)!
+If you are reading this, it means that you are already in and you are about to begin.
 We do not know yet who you are, where you come from and if what we wrote here is useful.
-Maybe you're already familiar with the school and its surroundings?
-But many of you know nothing about this school, the life in the laborators, in Nantes or even life in France for some foreigners.
-We wrote this little booklet for these people.
+Maybe are you already familiar with the school and its surroundings?
+But many of you know nothing about this school, the life in the laboratories, in Nantes or even life in France.
+We wrote this little booklet for those people.
 It will introduce you to the practical life in and outside the campus.
-What will happen to you? Are you going out? This document is meant to help you quickly.
-It was conducted by members of the Association des Étudiants en Doctorat (AED), which is an association dedicated to PhD students on the Ecole Centrale de Nantes campus (which you may join later, why not).
-Without necessarily get there, it is a living document, which asks only to be improved.
-Hoping to see you as soon as possible.
+You are a bit lost in this new life? This document will give you some advice.
+It was conducted by members of the Association des Étudiants en Doctorat (AED). This is an association dedicated to PhD students on the campus of the Ecole Centrale de Nantes.
+If you have remarks to improve this document, felle free to contact the AED.
+Hoping to see you as soon as possible!
+
+
+If you are looking for any help in your administrative stuff arriving in France, we strongly advise you the organisation available here :\\
+\url{http://www.nantes-chercheur.org}
 
 \section*{The AED (Association des Étudiants en Doctorat) (PhD Students Association)}
-\begin{quotation}
-The thesis takes time, changing its author into a hybrid creature, half-student, half-adult, stuck between two ages.
-It also consumes space by stacking books, cards and drafts. It abrades the privacy. It gives headaches.
-\emph{She} is also the heart,  it creates emotional involvement. It's also the object of all his troubles
-\end{quotation}
+\begin{foreigndisplayquote}{french}
+\begin{small}
+``Elle consume le temps, transformant son auteur en un être hybride, mi-étudiant, mi-adulte, coincé entre deux âges.
+Elle dévore aussi l’espace, par l’empilement de livres, de fiches et de brouillons. Elle empiète sur la vie privée. Elle prend la tête.
+''\footnote{The thesis takes time, changing its author into a hybrid creature, half-student, half-adult, stuck between two ages.
+It also consumes space by stacking books, cards and drafts. It abrades the privacy. It gives headaches.}
+\end{small}
+\end{foreigndisplayquote}
 %\url{http://www.scienceshumaines.com/la-solitude-du-thesard-de-fond_fr_27741.html}
 
 
-This is why it is necessary to fight all together, united, compacted against it.
+That's why it is necessary to fight all together, united, compacted against it.
 To this end, we have decided to create an association of PhD students on the campus of the École Centrale.
 
 
-The Association of PhD Students of the École Centrale de Nantes (AED) aims to act on 2 distinct and complementary levels. Firstly, on an academical level, it attempts to provide some useful information to Master and PhD students. Secondly, on a sociocultural level, it allows to create social ties between the current PhD students of the 5 laboratories of the École Centrale de Nantes.
+The Association of PhD Students of the École Centrale de Nantes (AED) aims to act on two distinct and complementary levels. Firstly, on an academical level, it attempts to provide some useful information to Master and PhD students. Secondly, on a sociocultural level, it allows to create social ties between the current PhD students of the five laboratories of the École Centrale de Nantes.
 
 \begin{enumerate}
     \item Inform Master and engineering students about PhD and research,
@@ -101,17 +144,19 @@ The Association of PhD Students of the École Centrale de Nantes (AED) aims to a
 For more information, please do not hesitate to contact the AED. (\url{aed@ec-nantes.fr})
 
 
-During the year, we organize several very fun activities :
+During the year, we organize several activities :
 \begin{itemize}
     \item PhD Conferences
     \item Billiard
     \item Karting
+    \item Booling
     \item \LaTeX{} teaching
     \item BBQ
     \item Visit of companies (Airbus, DCNS, Peugeot-Citroën)
     \item Tree climbing
     \item Pub
 \end{itemize}
+\mainmatter
 
 \input{parts/vie-sociale}
 
@@ -120,5 +165,3 @@ During the year, we organize several very fun activities :
 \input{parts/these}
 
 \end{document}
-
-
